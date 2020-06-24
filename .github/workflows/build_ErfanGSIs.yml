@@ -45,14 +45,11 @@ jobs:
        
        - name: Download Stock Rom & Generate GSI
          run: |
-           sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
+           sudo ./ErfanGSIs/url2GSI.sh --ab $ROM_URL $ROM_NAME
            ls /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
            7z a -r cepheus-ab.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-AB-10-*-ErfanGSI.img
            sudo ./transfer wet cepheus-ab.7z
-           sudo rm cepheus-ab.7z
-           7z a -r cepheus-aonly.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-Aonly-*-ErfanGSI.img
-           sudo ./transfer wet cepheus-aonly.7z
-           sudo rm cepheus-aonly.7z
+           sudo rm cepheus-ab.7z      
            sudo rm -rf /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output
 
   
