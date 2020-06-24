@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL1: https://hugeota.d.miui.com/20.6.17/miui_RAPHAEL_20.6.17_bdb369485a_10.0.zip
+  ROM_URL1: https://hugeota.d.miui.com/20.6.23/miui_CEPHEUS_20.6.23_d209a8f164_10.0.zip 
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -47,12 +47,12 @@ jobs:
          run: |
            sudo ./ErfanGSIs/url2GSI.sh $ROM_URL1 $ROM_NAME
            ls /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
-           7z a -r raphael-ab.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-AB-10-*-ErfanGSI.img
-           sudo ./transfer wet raphael-ab.7z
-           sudo rm raphael-ab.7z
-           7z a -r raphael-aonly.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-Aonly-*-ErfanGSI.img
-           sudo ./transfer wet raphael-aonly.7z
-           sudo rm raphael-aonly.7z
+           7z a -r cepheus-ab.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-AB-10-*-ErfanGSI.img
+           sudo ./transfer wet cepheus-ab.7z
+           sudo rm cepheus-ab.7z
+           7z a -r cepheus-aonly.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-Aonly-*-ErfanGSI.img
+           sudo ./transfer wet cepheus-aonly.7z
+           sudo rm cepheus-aonly.7z
            sudo rm -rf /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output
 
   
