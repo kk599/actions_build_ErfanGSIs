@@ -16,6 +16,7 @@ on:
 env:
   ROM_URL: https://pyone.257053.xyz/A:/%E5%B0%8F%E7%B1%B39/Sky_Mi9_20.6.4Cepheus_10%283AA752553A%29.zip
   ROM_NAME: MIUI
+  TAG_NAME: 20.6.4
   TZ: Asia/Shanghai
 
 jobs:
@@ -47,9 +48,9 @@ jobs:
          run: |
            sudo ./ErfanGSIs/url2GSI.sh --ab $ROM_URL $ROM_NAME
            ls /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
-           7z a -r cepheus-ab.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-AB-10-*-ErfanGSI.img
-           sudo ./transfer wet cepheus-ab.7z
-           sudo rm cepheus-ab.7z      
+           7z a -r $TAG_NAME-ab.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-AB-10-*-ErfanGSI.img
+           sudo ./transfer wet $TAG_NAME-ab.7z
+           sudo rm $TAG_NAME-ab.7z      
            sudo rm -rf /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output
 
   
