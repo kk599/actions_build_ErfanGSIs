@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://pyone.257053.xyz/A:/%E5%B0%8F%E7%B1%B39/Sky_Mi9_20.6.4Cepheus_10%283AA752553A%29.zip
+  ROM_URL: https://hugeota.d.miui.com/20.7.2/miui_CEPHEUS_20.7.2_c25e0908de_10.0.zip
   ROM_NAME: MIUI
-  TAG_NAME: 20.6.4
+  TAG_NAME: 20.7.2
   TZ: Asia/Shanghai
 
 jobs:
