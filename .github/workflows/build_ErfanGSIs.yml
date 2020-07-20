@@ -34,7 +34,7 @@ jobs:
 
        - name: Cloning ErfanGSIs tools
          run: |
-            git clone --recurse-submodules https://github.com/WhiteMouseHuang/ErfanGSIs.git
+            git clone --recurse-submodules https://github.com/kk599/ErfanGSIs.git
             sudo chmod -R 777 ErfanGSIs
             curl -sL https://git.io/file-transfer | sh
              
