@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.6.3/miui_MI8Lite_20.6.3_77adcacaa3_10.0.zip
+  ROM_URL: https://hugeota.d.miui.com/20.6.18/miui_CEPHEUS_20.6.18_6674d67d0a_10.0.zip
   ROM_NAME: MIUI
-  TAG_NAME: MI8Lite_20.6.3
+  TAG_NAME: mi9_20.6.18
   TZ: Asia/Shanghai
 
 jobs:
