@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.6.4/miui_CEPHEUS_20.6.4_fa016515dc_10.0.zip
+  ROM_URL: https://hugeota.d.miui.com/20.6.23/miui_CEPHEUS_20.6.23_d209a8f164_10.0.zip
   ROM_NAME: MIUI
-  TAG_NAME: mi9_20.6.4
+  TAG_NAME: mi9_20.6.23
   TZ: Asia/Shanghai
 
 jobs:
