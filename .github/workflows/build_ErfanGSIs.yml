@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.6.23/miui_CEPHEUS_20.6.23_d209a8f164_10.0.zip
-  ROM_NAME: MIUI
-  TAG_NAME: mi9_20.6.23
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.20.1.15/cn_daily/20200115001512/a098a59d/update.zip
+  ROM_NAME: Flyme
+  TAG_NAME: 16s
   TZ: Asia/Shanghai
 
 jobs:
