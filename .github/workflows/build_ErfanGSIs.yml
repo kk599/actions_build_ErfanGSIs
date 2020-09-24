@@ -48,7 +48,7 @@ jobs:
          run: |
            sudo ./ErfanGSIs/url2GSI.sh --ab $ROM_URL $ROM_NAME
            ls /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
-           7z a -r $TAG_NAME-ab.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/MIUI-AB-10-*-ErfanGSI.img
+           7z a -r $TAG_NAME-ab.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output
            sudo ./transfer wet $TAG_NAME-ab.7z
            sudo rm $TAG_NAME-ab.7z      
            sudo rm -rf /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output
